@@ -1,18 +1,30 @@
 body {
-    font: Normal 14pt Arial;
+    font: 1.2em Arial;
     text-align: center;
-    margin-top: 100px;
 }
 
 .btn {
     width: 200px;
     height: 100px;
-    font: Bold 14pt Arial;
+    font: Bold 1.2em Arial;
     background-color: #0b0be0;
     color: #ffffff;
     border: 1px solid #0b0be0;
     border-radius: 15px;
+    margin: 20px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: black;
 }
 
 #recomecar {
@@ -21,10 +33,29 @@ body {
     font: Bold 14pt Arial;
     background-color: #e0c00b;
     color: #ffffff;
+    border: 1px solid #e0c00b;
     border-radius: 15px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition-duration: 1s;
+    cursor: pointer;
 }
 
-#creditos {
+#recomecar:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+footer {
     font-style: Italic;
+}
+
+footer > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0b0be0;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
