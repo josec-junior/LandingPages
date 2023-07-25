@@ -1,20 +1,38 @@
+:root {
+    --cor01: #0b0be0;
+    --cor02: #040465;
+    --cor03: #e0c00b;
+}
+
 body {
     font: 1.2em Arial;
     text-align: center;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    display: block;
+}
+
+header > h1 {
+    color: var(--cor01);
+}
+
+.tema {
+    width: 50px;
+    height: 50px;
+    background: url("imagens/eclipse.png");
+    background-size: cover;
+    border: 1px solid #ffffff;
+    cursor: pointer;
 }
 
 .btn {
     width: 200px;
     height: 100px;
     font: Bold 1.2em Arial;
-    background-color: #0b0be0;
+    background-color: var(--cor01);
     color: #ffffff;
-    border: 1px solid #0b0be0;
+    border: 1px solid var(--cor01);
     border-radius: 15px;
     margin: 20px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
@@ -29,16 +47,18 @@ header {
 }
 
 .btn:active {
-    background-color: black;
+    background-color: var(--cor02);
+    transform: scale(1);
+    transition-duration: 1s;
 }
 
 #recomecar {
     width: 150px;
     height: 50px;
     font: Bold 14pt Arial;
-    background-color: #e0c00b;
+    background-color: var(--cor03);
     color: #ffffff;
-    border: 1px solid #e0c00b;
+    border: 1px solid var(--cor03);
     border-radius: 15px;
     box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
     transform: scale(1);
