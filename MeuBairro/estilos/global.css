@@ -34,7 +34,7 @@ section {
     text-align: justify;
 }
 
-section#sobre-nos > article {
+article.conteudo {
     display: flex;
     gap: 10px;
 }
@@ -42,6 +42,11 @@ section#sobre-nos > article {
 section#chegar-ate-nos {
     background-color: var(--cor06);
     color: var(--cor04);
+}
+
+iframe {
+    width: 500px;
+    height: 250px;
 }
 
 a {
