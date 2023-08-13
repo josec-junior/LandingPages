@@ -22,21 +22,18 @@ header > img#brasao {
     height: 150px;
 }
 
-footer {
-    background-color: var(--cor05);
-    color: var(--cor04);
-    text-align: center;
-    padding: 20px;
-}
-
 section {
     padding: 20px;
     text-align: justify;
 }
 
+article > p {
+    text-indent: 10px;
+}
+
 article.conteudo {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 section#chegar-ate-nos, section#principais-atracoes {
@@ -59,4 +56,11 @@ a {
 a:hover {
     color: var(--cor01);
     text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor05);
+    color: var(--cor04);
+    text-align: center;
+    padding: 20px;
 }
