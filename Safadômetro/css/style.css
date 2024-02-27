@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(109, 106, 106);
+}
+
+main {
+    margin: 30px auto;
+    padding: 20px;
+    width: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.482);
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+section#formulario {
+    width: 50%;
+    margin-top: 50px;
+}
+
+div.campo {
+    margin-bottom: 10px;
+}
+
+div.campo > input[type = "number"] {
+    width: 100px;
+}
+
+input[type = "button"] {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(235, 155, 6);
+    border: 2px solid rgb(235, 155, 6);
+    border-radius: 10px;
+    color: white;
+    font: normal 0.8em Arial;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.482);
+    margin-top: 10px;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.5s;
+}
+
+input[type = "button"]:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+section#imagem {
+    width: 50%;
+}
+
+section#imagem > img {
+    width: 100%;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    color: rgb(235, 155, 6);
+    text-decoration: underline;
+}

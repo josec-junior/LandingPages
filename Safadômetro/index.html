@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Safadômetro </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+    <header>
+        <h1> Safadômetro </h1>
+    </header>
+    <main>
+        <section id="formulario">
+            <div class="campo">
+                <label for="txtdia"> Dia: </label>
+                <input type="number" name="txtdia" id="txtdia" min="1" max="31">
+            </div>
+            <div class="campo">
+                <label for="txtmes"> Mês: </label>
+                <input type="number" name="txtmes" id="txtmes" min="1" max="12">
+            </div>
+            <div class="campo">
+                <label for="txtano"> Ano: </label>
+                <input type="number" name="txtano" id="txtano" min="1" max="99">
+            </div>
+            <input type="button" value="Calcular Safadeza" onclick="wesley_safadao()">
+        </section>
+        <section id="imagem">
+            <img src="imagens/ws.png" alt="Wesley Safadão">
+        </section>
+    </main>
+    <footer>
+        <p>
+            Landing page desenvolvida por <a href="https://github.com/josec-junior" target="_blank"> José Júnior</a> e
+            hospedada com o <a href="https://pages.github.com/" target="_blank"> GitHub Pages</a> &copy;
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
