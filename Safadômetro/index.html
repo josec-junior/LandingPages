@@ -10,25 +10,27 @@
     <link rel="stylesheet" href="css/responsivo.css">
 </head>
 
-<body>
+<body onload="apresentar()">
     <header>
         <h1> Safadômetro </h1>
     </header>
     <main>
         <section id="formulario">
-            <div class="campo">
-                <label for="txtdia"> Dia: </label>
-                <input type="number" name="txtdia" id="txtdia" min="1" max="31">
-            </div>
-            <div class="campo">
-                <label for="txtmes"> Mês: </label>
-                <input type="number" name="txtmes" id="txtmes" min="1" max="12">
-            </div>
-            <div class="campo">
-                <label for="txtano"> Ano: </label>
-                <input type="number" name="txtano" id="txtano" min="1" max="99">
-            </div>
-            <input type="button" value="Calcular Safadeza" onclick="wesley_safadao()">
+            <form>
+                <div class="campo">
+                    <label for="txtdia"> Dia: </label>
+                    <input type="number" name="txtdia" id="txtdia" min="1" max="31">
+                </div>
+                <div class="campo">
+                    <label for="txtmes"> Mês: </label>
+                    <input type="number" name="txtmes" id="txtmes" min="1" max="12">
+                </div>
+                <div class="campo">
+                    <label for="txtano"> Ano: </label>
+                    <input type="number" name="txtano" id="txtano" min="0" max="99">
+                </div>
+                <input type="button" value="Calcular Safadeza" onclick="wesley_safadao()">
+            </form>
         </section>
         <section id="imagem">
             <img src="imagens/ws.png" alt="Wesley Safadão">
