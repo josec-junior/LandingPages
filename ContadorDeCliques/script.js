@@ -3,6 +3,14 @@ let i = 30
 cliques = document.getElementById("cliques")
 tempo = document.getElementById("tempo")
 
+function mostrarAnoAtual() {
+    let rodape = window.document.getElementsByTagName("footer")[0]
+    let paragrafo = rodape.children[0]
+    let dataAtual = new Date()
+    let anoAtual = dataAtual.getFullYear()
+    paragrafo.innerHTML += ` &copy; ${anoAtual}`
+}
+
 function mudarTema() {
     let corpo = window.document.getElementsByTagName("body")[0]
     let titulo = window.document.getElementsByTagName("h1")[0]

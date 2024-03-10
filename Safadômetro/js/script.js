@@ -4,6 +4,15 @@ window.onload = function() {
     let form = window.document.getElementById("formulario")
     original = form.innerHTML
     window.alert("Olá, visitante! Para prosseguir digite a sua data de nascimento no formato (dd/mm/aa), exemplo: (20/03/03)")
+    mostrarAnoAtual()
+}
+
+function mostrarAnoAtual() {
+    let rodape = window.document.getElementsByTagName("footer")[0]
+    let paragrafo = rodape.children[0]
+    let dataAtual = new Date()
+    let anoAtual = dataAtual.getFullYear()
+    paragrafo.innerHTML += ` &copy; ${anoAtual}`
 }
 
 function verificarAnoBissexto(ano) {
