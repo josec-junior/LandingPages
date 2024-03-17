@@ -15,11 +15,18 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.533);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > h1 {
+    margin: auto;
 }
 
 header > img#brasao {
-    width: 300px;
-    height: 150px;
+    width: auto;
+    height: 100px;
 }
 
 section {
@@ -32,8 +39,30 @@ article > p {
 }
 
 article.conteudo {
-    display: flex;
-    gap: 30px;
+    margin-top: 10px;
+}
+
+section#sobre-nos > article.conteudo {
+    text-align: center;
+}
+
+section#sobre-nos > article.conteudo > p {
+    text-align: justify;
+}
+
+img#centro {
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    scale: 1;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+img#centro:hover {
+    scale: 1.1;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 section#chegar-ate-nos, section#principais-atracoes {
@@ -42,9 +71,19 @@ section#chegar-ate-nos, section#principais-atracoes {
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.533);
 }
 
+section#chegar-ate-nos > article.conteudo {
+    display: block;
+    text-align: center;
+}
+
+section#chegar-ate-nos > article.conteudo > p {
+    text-align: justify;
+}
+
 iframe {
-    max-width: 1000px;
-    height: 250px;
+    margin: 15px;
+    width: 700px;
+    height: 350px;
 }
 
 a {

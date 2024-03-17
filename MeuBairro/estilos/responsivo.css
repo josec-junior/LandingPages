@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 992px) {
-    
-    article.conteudo {
-        display: block;
+
+    img#centro {
+        width: 250px;
+        height: 250px;
     }
 
     iframe {
-        width: 90vw;
+        width: 250px;
+        height: 250px;
     }
 }
