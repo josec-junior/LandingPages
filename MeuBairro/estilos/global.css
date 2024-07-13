@@ -12,7 +12,7 @@
 header {
     background-color: var(--cor01);
     color: var(--cor04);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.533);
     display: flex;
@@ -34,34 +34,114 @@ section {
     text-align: justify;
 }
 
+section > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 article > p {
     text-indent: 10px;
+    margin: auto;
 }
 
 article.conteudo {
     margin-top: 10px;
+    width: 950px;
+    margin: auto;
 }
 
-section#sobre-nos > article.conteudo {
+section#sobre-nos > article.conteudo, section#principais-atracoes > article.conteudo {
     text-align: center;
 }
 
-section#sobre-nos > article.conteudo > p {
+section#sobre-nos > article.conteudo > p, section#principais-atracoes > article.conteudo > p {
     text-align: justify;
 }
 
-img#centro {
+img.imgModal {
     width: 500px;
     height: 400px;
     border-radius: 10px;
     scale: 1;
     transition: 0.5s;
-    margin-top: 20px;
+    margin: 20px;
 }
 
-img#centro:hover {
+img.imgModal:hover {
     scale: 1.1;
     transition: 0.5s;
+    cursor: zoom-in;
+    transition: 0.3s;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.conteudoDoModal {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+/* Caption of Modal Image */
+#legenda {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+/* Add Animation */
+.conteudoDoModal, #legenda {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+/* The Close Button */
+.fecharModal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.fecharModal:hover, .fecharModal:focus {
+    color: #bbb;
+    text-decoration: none;
     cursor: pointer;
 }
 

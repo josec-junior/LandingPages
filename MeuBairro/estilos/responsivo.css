@@ -2,7 +2,26 @@
 
 @media screen and (max-width: 992px) {
 
-    img#centro {
+    body {
+        font-size: 1em;
+    }
+
+    header > img#brasao {
+        width: auto;
+        height: 40px;
+    }
+
+    header > h1 {
+        margin-left: 10px;
+        margin: auto;
+        text-align: center;
+    }
+
+    article.conteudo {
+        width: 100%;
+    }
+
+    img.imgModal {
         width: 250px;
         height: 250px;
     }

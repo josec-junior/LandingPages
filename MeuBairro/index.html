@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Centro de Santa Luzia - PB </title>
-    <link rel="shortcut icon" href="imagens/brasao.svg" type="icon/x-image">
+    <link rel="shortcut icon" href="imagens/brasao.png" type="icon/x-image">
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/global.css">
     <link rel="stylesheet" href="estilos/responsivo.css">
 </head>
 
-<body onload="mostrarAnoAtual()">
+<body onload="mostrarAnoAtual(), abrirModalParaImagens('imgModal')">
     <header>
         <img src="imagens/brasao.png" alt="Brasão da cidade de Santa Luzia" id="brasao">
         <h1> Centro de Santa Luzia - PB </h1>
@@ -30,13 +30,18 @@
                 cidades brasileiras, teve início a povoação em torno de uma capela, em meados do século XVIII.
             </p>
             <figure>
-                <img src="imagens/centro.jpg" alt="Centro de Santa Luzia" id="centro">
+                <img src="imagens/centro.jpg" alt="Centro de Santa Luzia" class="imgModal">
                 <figcaption>
                     Centro de Santa Luzia
                     <br>
                     Fonte: Yayu Drone
                 </figcaption>
             </figure>
+            <div class="modal">
+                <span class="fecharModal"> &times; </span>
+                <img id="modalImg" class="conteudoDoModal">
+                <div id="legenda"></div>
+            </div>
         </article>
     </section>
     <section id="chegar-ate-nos">
@@ -82,6 +87,14 @@
                 talvez a
                 maior procissão do estado.
             </p>
+            <figure>
+                <img src="imagens/saojoao2022.jpg" alt="São João de Santa Luzia - 2022" class="imgModal">
+                <figcaption>
+                    São João de Santa Luzia - 2022
+                    <br>
+                    Fonte: Instagram oficial do São João de Santa Luzia
+                </figcaption>
+            </figure>
         </article>
     </section>
     <section id="album-fotos">
