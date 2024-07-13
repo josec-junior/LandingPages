@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Agrupador de Links </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body onload="mostrarAnoAtual()">
+    <main>
+        <div id="fotoPerfil">
+            <img src="img/perfil.jpg" alt="Foto de José Júnior">
+        </div>
+        <p id="nome"> José Júnior </p>
+        <div class="item" onclick="abrirEmOutraAba('https://github.com/josec-junior')">
+            <a href="https://github.com/josec-junior" target="_blank"> GitHub <img src="img/github.png" alt="GitHub"
+                    class="icone"></a>
+        </div>
+        <div class="item" onclick="abrirEmOutraAba('https://www.linkedin.com/in/jos%C3%A9-j%C3%BAnior-871442209/')">
+            <a href="https://www.linkedin.com/in/jos%C3%A9-j%C3%BAnior-871442209/" target="_blank"> LinkedIn <img
+                    src="img/linkedin.png" alt="LinkedIn" class="icone"></a>
+        </div>
+        <div class="item" onclick="abrirEmOutraAba('mailto:josejunior.programmer@gmail.com')">
+            <a href="mailto:josejunior.programmer@gmail.com" target="_blank"> E-mail <img src="img/e-mail.png"
+                    alt="E-mail" class="icone"></a>
+        </div>
+        <div class="item" onclick="abrirEmOutraAba('https://www.instagram.com/juniorrr.py/')">
+            <a href="https://www.instagram.com/juniorrr.py/" target="_blank"> Instagram <img src="img/instagram.png"
+                    alt="Instagram" class="icone"></a>
+        </div>
+    </main>
+    <footer>
+        <p id="rodape">
+            Landing page desenvolvida por <a href="https://github.com/josec-junior" target="_blank"> José Júnior</a> e
+            hospedada com o <a href="https://pages.github.com/" target="_blank">
+                GitHub Pages</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

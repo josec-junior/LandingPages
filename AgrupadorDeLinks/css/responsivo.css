@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 350px;
+    }
+
+    footer {
+        margin-bottom: 20px;
+    }
+}
